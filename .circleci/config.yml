@@ -1,10 +1,11 @@
 version: 2.1
-commands:
-  sayhello:
-    description: "デモ用のごく簡単なコマンドです"
-    parameters:
-      to:
-        type: string
-        default: "Hello World"
+executors:
+  my-executor:
+    docker:
+      - image: circleci/ruby:2.5.1-node-browsers
+
+jobs:
+  my-job:
+    executor: my-executor
     steps:
-      - run: echo << parameters.to >>
+      - run: echo Executor の“外”で定義しました
