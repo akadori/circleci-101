@@ -5,6 +5,9 @@ executors:
       - image: circleci/ruby:2.5.1-node-browsers
 
 jobs:
+  build:
+    steps:
+      - run: echo build
   my-job:
     executor: my-executor
     steps:
