@@ -1,3 +1,4 @@
+version: 2.1
 commands:
   sayhello:
     description: "デモ用のごく簡単なコマンドです"
