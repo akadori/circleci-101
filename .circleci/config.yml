@@ -6,7 +6,8 @@ executors:
 
 jobs:
   build:
-    docker: circleci/node:10-browsers
+    docker:
+      - circleci/node:10-browsers
     steps:
       - run: echo build
   my-job:
