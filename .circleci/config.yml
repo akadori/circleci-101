@@ -12,3 +12,12 @@ jobs:
     steps:
       - checkout
       - run: echo "A first hello"
+
+      # Unable to parse YAML
+      # while constructing a mapping
+      #  in 'string', line 3, column 3:
+      #       build:
+      #       ^
+      # found duplicate key build
+      #  in 'string', line 9, column 3:
+      #       build:
